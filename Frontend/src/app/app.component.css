@@ -1,0 +1,29 @@
+.background-wrapper {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('/img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+  
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

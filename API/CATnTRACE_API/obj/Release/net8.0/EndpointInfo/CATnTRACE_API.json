@@ -1,0 +1,381 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CATnTRACE_API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v{version}/OrderParcelTracking/{orderId}": {
+      "get": {
+        "tags": [
+          "OrderParcelTracking"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v{version}/OrderParcelTracking/by-seq": {
+      "get": {
+        "tags": [
+          "OrderParcelTracking"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "seqNo",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v{version}/ParcelTracking/{parcelId}": {
+      "get": {
+        "tags": [
+          "ParcelTracking"
+        ],
+        "parameters": [
+          {
+            "name": "parcelId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderParcelTracking"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v{version}/ParcelTracking/by-seq": {
+      "get": {
+        "tags": [
+          "ParcelTracking"
+        ],
+        "parameters": [
+          {
+            "name": "parcelId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "seqNo",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrderTrackingStatus"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "OrderParcelTracking": {
+        "type": "object",
+        "properties": {
+          "pk": {
+            "type": "string",
+            "nullable": true
+          },
+          "seQ_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "seQ_TYPE": {
+            "type": "string",
+            "nullable": true
+          },
+          "seQ_STATUS": {
+            "type": "string",
+            "nullable": true
+          },
+          "seQ_FK": {
+            "type": "string",
+            "nullable": true
+          },
+          "iS_DONE": {
+            "type": "string",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderTrackingStatus": {
+        "type": "object",
+        "properties": {
+          "pk": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "plannedStartDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actulStartDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orderStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteName": {
+            "type": "string",
+            "nullable": true
+          },
+          "parcelNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

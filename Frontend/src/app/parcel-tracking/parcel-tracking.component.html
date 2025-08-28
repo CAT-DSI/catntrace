@@ -1,0 +1,130 @@
+<!-- Loader GIF Overlay -->
+<app-loader *ngIf="isLoading$! | async"></app-loader>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-6 text-center">
+        <div class="card card-container">
+            <form [formGroup]="orderForm">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="header-row d-flex justify-content-between align-items-center mb-1">
+                                <!-- Logo -->
+                                <img src="img/Kpi.png" alt="Logo" style="height: 60px; margin-left: 22px;">
+                                <!-- Text stack -->
+                                <div class="text-center">
+                                    <div style="font-weight: bold; font-size: 40px; color: #054d98;">Tracking Status
+                                    </div>
+                                    <!-- <div style="font-size: 30px; color: #054d98;">Status</div> -->
+                                </div>
+                                <!-- Go Back Button -->
+                                <button mat-raised-button class="go-back-btn" (click)="goBack()">
+                                    GO BACK
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+
+                                <div class="step-container">
+                                    <!-- Top row: images only -->
+                                    <!-- Images -->
+                                    <div class="step-images-row">
+                                        <ng-container *ngFor="let step of orderSteps; let i = index">
+                                            <img [src]="isButtonActive(i) ? step.imgBlue : step.imgGray"
+                                                alt="{{ step.label }}" class="step-img" [ngClass]="{'extra-margin-bottom': step.no === '6' || step.no === '1',
+                                            'margin-top-3': step.no === '7'}" />
+                                        </ng-container>
+                                    </div>
+
+                                    <!-- Buttons + Bars -->
+                                    <div class="step-buttons-row d-flex align-items-center justify-content-center"
+                                        [class.locked]="selectedStepNo !== null">
+                                        <!-- Buttons -->
+                                        <ng-container *ngFor="let step of orderSteps; let i = index">
+                                            <button mat-raised-button [ngClass]="{
+  'btn-white': i === orderSteps.length - 1 && areAllDone(),
+  'btn-blue': getButtonColor(step.no) === 'blue',
+  'btn-gray': getButtonColor(step.no) === 'gray',
+  'selected-step': step.no === selectedStepNo
+}" [disabled]="getButtonColor(step.no) === 'gray'" (mouseenter)="onStepHover(step.no)" (mouseleave)="onStepLeave()"
+                                                (click)="onStepClick(step.no)">
+
+                                                <ng-container *ngIf="i === orderSteps.length - 1">
+                                                    <!-- Last button logic -->
+                                                    <ng-container *ngIf="areAllDone(); else blueLastButtonNoSmiley">
+                                                        <!-- All REALIZED: show smiley 😊 <img src="img/smile-line.jpg" alt="Logo">-->
+                                                        <span style="font-size: 18px; ">
+                                                            <img src="img/smile.png" alt="Logo"
+                                                                style="width: 38px;"></span>
+
+                                                    </ng-container>
+                                                    <ng-template #blueLastButtonNoSmiley>
+                                                        <!-- Not all realized (means some ISSUE or NOTDONE): show check icon, last button still blue if any ISSUE -->
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </ng-template>
+                                                </ng-container>
+                                                <ng-container *ngIf="i !== orderSteps.length - 1">
+                                                    <!-- For buttons other than last -->
+                                                    <i class="fa-solid fa-check"></i>
+                                                </ng-container>
+
+                                            </button>
+
+                                            <!-- Render bar except after last button -->
+                                            <ng-container *ngIf="i < orderSteps.length - 1">
+                                                <div [ngClass]="{
+          'bar-blue': getBarColor(i) === 'blue',
+          'bar-half': getBarColor(i) === 'half',
+          'bar-gray': getBarColor(i) === 'gray'
+        }" class="step-bar">
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <div class="table-scroll-container"
+                                    *ngIf="stepDetails.length > 0 && (hoveredStepNo || isTableLocked)">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Parcel Number</th>
+                                                <th style="width: 70px;">Status</th>
+                                                <th>Date/Time</th>
+                                                <th>Site</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let detail of stepDetails">
+                                                <td>{{ detail.parcelNumber }}</td>
+                                                <!-- <td>{{ detail.orderStatus }}</td> -->
+                                                <td>
+                                                    <span *ngIf="detail.orderStatus === '1'"
+                                                        style="color: green;">✔️</span>
+                                                    <span *ngIf="detail.orderStatus !== '1'"
+                                                        style="color: red;">❌</span>
+                                                </td>
+                                                <td>{{ detail.orderDateTime | date: 'dd/MM/yyyy HH:mm' }}</td>
+                                                <td class="site-name" [title]="detail.siteName">{{ detail.siteName }}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- <div *ngIf="stepDetails.length === 0">No details to display</div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

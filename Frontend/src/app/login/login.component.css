@@ -1,0 +1,94 @@
+.card-container.card {
+    max-width: 475px;
+    padding: 0px 30px;
+    margin-top: 125px;
+}
+
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 2px #000000;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 2px #000000;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px #000000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card-container img {
+    margin-bottom: 15px;
+    /* width: 100%;  */
+    margin-left: -38px !important
+}
+
+.white-box {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+select {
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    -moz-appearance: auto !important;
+}
+
+
+.white-box span {
+    font-weight: normal;
+    font-size: 1.0em;
+    display: block;
+    /* margin-bottom: 15px; */
+}
+
+.divider-line {
+    border: none;
+    border-top: 1px solid #3f3f3f;
+    margin: 10px 0;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.table>tbody>tr>td {
+    padding: 15px 8px;
+}
+
+select.form-control:focus,
+input.form-control:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+select.form-control:hover,
+input.form-control:hover {
+    border-color: #7bd7f0;
+}
+
+.popup-error {
+    position: absolute;
+    left: 227px;
+    top: 75%;
+    margin-top: 2px;
+    background-color: #cf0505;  
+    color: white; 
+    padding: 5px 10px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    font-size: 15px;
+    z-index: 10;
+    white-space: nowrap;
+}

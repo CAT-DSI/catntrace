@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CATnTraceAPI\\CATnTRACE_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\model\\orderparceltracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\model\\orderparceltracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\controllers\\ordertrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\controllers\\ordertrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\model\\ordertrackingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\model\\ordertrackingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\controllers\\parceltrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\controllers\\parceltrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|d:\\catntraceapi\\catntrace_api\\catntrace_api\\dal\\parceltrackingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87FAD1-8B52-4B6D-8677-5EF7E4437D1E}|CATnTRACE_API\\CATnTRACE_API.csproj|solutionrelative:catntrace_api\\dal\\parceltrackingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderTrackingStatus.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Model\\OrderTrackingStatus.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\Model\\OrderTrackingStatus.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Model\\OrderTrackingStatus.cs",
+              "RelativeToolTip": "CATnTRACE_API\\Model\\OrderTrackingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T10:18:22.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderParcelTracking.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Model\\OrderParcelTracking.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\Model\\OrderParcelTracking.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Model\\OrderParcelTracking.cs",
+              "RelativeToolTip": "CATnTRACE_API\\Model\\OrderParcelTracking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T10:18:19.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderTrackingController.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Controllers\\OrderTrackingController.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\Controllers\\OrderTrackingController.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Controllers\\OrderTrackingController.cs",
+              "RelativeToolTip": "CATnTRACE_API\\Controllers\\OrderTrackingController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T14:01:04.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ParcelTrackingDAL.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\DAL\\ParcelTrackingDAL.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\DAL\\ParcelTrackingDAL.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\DAL\\ParcelTrackingDAL.cs",
+              "RelativeToolTip": "CATnTRACE_API\\DAL\\ParcelTrackingDAL.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAlwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:31:37.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ParcelTrackingController.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Controllers\\ParcelTrackingController.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\Controllers\\ParcelTrackingController.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Controllers\\ParcelTrackingController.cs",
+              "RelativeToolTip": "CATnTRACE_API\\Controllers\\ParcelTrackingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T13:09:01.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Program.cs",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\Program.cs",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\Program.cs",
+              "RelativeToolTip": "CATnTRACE_API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T12:06:58.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\appsettings.json",
+              "RelativeDocumentMoniker": "CATnTRACE_API\\appsettings.json",
+              "ToolTip": "D:\\CATnTraceAPI\\CATnTRACE_API\\CATnTRACE_API\\appsettings.json",
+              "RelativeToolTip": "CATnTRACE_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T14:38:13.403Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
