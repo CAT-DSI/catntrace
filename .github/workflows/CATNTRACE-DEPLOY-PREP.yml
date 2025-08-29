@@ -6,7 +6,7 @@ name: Build and Deploy CATNTRACE .NET App (on Self-hosted)
 on:
   push:
     branches:
-      - main1
+      - main
 
 jobs:
   build-and-deploy:
@@ -36,4 +36,4 @@ jobs:
      
       - name: Deploy to IIS folder
         run: |
-          Copy-Item -Path "C:\deploy\publishkpilc\*" -Destination "E:\WEBRoot\KPILCGithub" -Recurse -Force     
+          Copy-Item -Path "C:\deploy\publishcatntrace\*" -Destination "E:\WEBRoot\CATNTRACEGithub" -Recurse -Force     
