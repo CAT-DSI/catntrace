@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy Angular app to IIS folder
         run: |
-          $source = "dist\catntrace_frontend\*"
+          $source = "Frontend\dist\catntrace_frontend\*"
           $destination = "E:\WEBRoot\catntraceangulargithub"
           if (!(Test-Path $destination)) {
             New-Item -ItemType Directory -Path $destination
